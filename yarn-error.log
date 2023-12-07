@@ -1,0 +1,70 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\ibora\AppData\Local\node\corepack\yarn\1.22.19\bin\yarn.js add @mui/material/box
+
+PATH: 
+  C:\Python312\Scripts\;C:\Python312\;C:\Python311\Scripts\;C:\Python311\;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Amazon Corretto\jdk11.0.11_9\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Android\android-sdk\tools;C:\Android\android-sdk\platform-tools;C:\Android\android-sdk\tools\bin;C:\Program Files\Airshipper\;C:\Program Files\nodejs\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\ibora\AppData\Local\Programs\Python\Python35\Scripts\;C:\Users\ibora\AppData\Local\Programs\Python\Python35\;C:\Users\ibora\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ibora\AppData\Local\Programs\Python\Python38\;C:\Users\ibora\AppData\Local\Microsoft\WindowsApps;C:\Users\ibora\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.3\bin;;C:\Program Files (x86)\GitHub CLI\;C:\tools\dart-sdk\bin;C:\Users\ibora\AppData\Roaming\Pub\Cache\bin;C:\Program Files\heroku\bin;C:\Program Files\JetBrains\PhpStorm 2023.2.2\bin;;C:\Users\ibora\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ibora\.dotnet\tools;C:\Users\ibora\AppData\Roaming\Composer\vendor\bin;C:\tools\flutter\bin;;C:\Users\ibora\AppData\Local\Programs\oh-my-posh\bin;C:\Users\ibora\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm 2023.2.2\bin;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@mui%2fmaterial/box: Request "https://registry.yarnpkg.com/@mui%2fmaterial/box" returned a 405
+      at params.callback [as _callback] (C:\Users\ibora\AppData\Local\node\corepack\yarn\1.22.19\lib\cli.js:66154:18)
+      at self.callback (C:\Users\ibora\AppData\Local\node\corepack\yarn\1.22.19\lib\cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (C:\Users\ibora\AppData\Local\node\corepack\yarn\1.22.19\lib\cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (C:\Users\ibora\AppData\Local\node\corepack\yarn\1.22.19\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "shit",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc && vite build",
+      "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+      "preview": "vite preview"
+    },
+    "dependencies": {
+      "axios": "^1.6.2",
+      "flowbite": "^2.2.0",
+      "flowbite-react": "^0.7.0",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-winbox": "^1.5.0"
+    },
+    "devDependencies": {
+      "@types/react": "^18.2.37",
+      "@types/react-dom": "^18.2.15",
+      "@typescript-eslint/eslint-plugin": "^6.10.0",
+      "@typescript-eslint/parser": "^6.10.0",
+      "@vitejs/plugin-react": "^4.2.0",
+      "autoprefixer": "^10.4.16",
+      "eslint": "^8.53.0",
+      "eslint-plugin-react-hooks": "^4.6.0",
+      "eslint-plugin-react-refresh": "^0.4.4",
+      "postcss": "^8.4.31",
+      "tailwindcss": "^3.3.5",
+      "typescript": "^5.2.2",
+      "vite": "^5.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
