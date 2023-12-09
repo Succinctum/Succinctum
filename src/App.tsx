@@ -7,10 +7,11 @@ import WinBox from "react-winbox";
 // import navbar from "./Componets/Navbar";
 // import axios from "axios";
 // import sample from './repair-  services-robot-future-live-wallpaper-1.mp4';
-
-import SignUpForm from "./Componets/SignUpForm";
 import BackGroundVid from "./Componets/BackGroundVid";
 import Navbar from "./Componets/Navbar";
+import IconsApps from "./Componets/IconApps";
+import '../public/Font/FreePixel.ttf';
+// import IconsApps from './Componets/IconApps';
 {
   /**
 function MyComponent() {
@@ -61,6 +62,7 @@ function App() {
 
       <Navbar />
 
+      <IconsApps/>
       {/* <SignUpForm /> */}
       
       {/* <WinBoxWrapper/> */}
@@ -99,6 +101,7 @@ export default App;
 // import sampleGif2 from './tokyo.gif';
 // import { Navbar } from 'flowbite-react';
 // import WinBoxWrapper from './Componets/WinBoxWrapper';
+// import IconsApps from './IconApps';
 
 // function MyComponent() {
 //   const [apiData, setApiData] = useState(null);
