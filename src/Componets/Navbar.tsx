@@ -4,6 +4,8 @@ import WinBox from "react-winbox";
 import React, { useState, useEffect } from "react";
 import SignUpForm from "./SignUpForm";
 import BackGroundVid from "./BackGroundVid";
+import BackgroundSelector from './BackgroundSelector';
+
 
 
 function Navbar() {
@@ -23,22 +25,29 @@ function Navbar() {
     setWinBoxStates((prevStates) => ({ ...prevStates, [title]: false }));
   };
 
+  function getCurrentTime(): string {
+    const currentDate = new Date();
+    const formattedDate = currentDate.toLocaleString();
+    return formattedDate;
+  }
+  
+  const currentTimeString: string = getCurrentTime();
 
   return (
 
     <nav className=" p-1 backdrop-blur bg-white/10 mx-5 mb-5 rounded-b-xl drop-shadow-lg shadow-2xl text-gray-100">
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between ">
       <a
-        href="https://flowbite.com/"
+        href="#"
         className="flex items-center space-x-3 rtl:space-x-reverse"
       >
         <img
-          src="https://flowbite.com/docs/images/logo.svg"
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e065829d-fc32-4289-a2af-e68fd8cb079d/dg96ekl-7ff10160-9050-4a8a-af06-ad97af46fbe5.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UwNjU4MjlkLWZjMzItNDI4OS1hMmFmLWU2OGZkOGNiMDc5ZFwvZGc5NmVrbC03ZmYxMDE2MC05MDUwLTRhOGEtYWYwNi1hZDk3YWY0NmZiZTUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.h94JLLgRA_w2ngBcY_2qXszwKBqz1c5OJDkhl2HWT4Y"
           className="h-8"
           alt="Flowbite Logo"
         />
         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-          Flowbite
+        Succinct
         </span>
       </a>
       <button
@@ -69,16 +78,16 @@ function Navbar() {
         <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
           <li>
           <div className="z-10">
-              <button onClick={() => openWinBox("login0")} className="w-auto h-min font-mono ">Open WinBox</button>
+              <button onClick={() => openWinBox("login0")} className="w-auto h-min font-mono ">Sign-Up</button>
               {winBoxStates["login0"] && (
                 <WinBox
                   title="login0"
-                  width={350}
-                  height={497}
+                  width={335}
+                  height={500}
                   x={100}
                   y={50}
-                  noResize={true}
-                  background="linear-gradient(90deg, rgba(135,91,128,1) 0%, rgba(59,106,218,1) 100%)"
+                  noResize={false}
+                  background="linear-gradient(90deg, rgba(173,11,4,1) 20%, rgba(160,201,151,1) 90%)"
                   onclose={() => closeWinBox("login0")}
                 >
                   <BackGroundVid />
@@ -89,20 +98,22 @@ function Navbar() {
           </li>
           <li>
           <div className="z-10">
-              <button onClick={() => openWinBox("login1")}>Open WinBox</button>
+              <button onClick={() => openWinBox("login1")}>Select-Bg</button>
               {winBoxStates["login1"] && (
                 <WinBox
                   title="login1"
-                  width={350}
+                  width={260}
                   height={497}
                   x={100}
                   y={50}
-                  noResize={true}
-                  background="linear-gradient(90deg, rgba(135,91,128,1) 0%, rgba(59,106,218,1) 100%)"
+                  noResize={false}
+                  background="linear-gradient(90deg, rgba(173,11,4,1) 20%, rgba(160,201,151,1) 90%)"
                   onclose={() => closeWinBox("login1")}
                 >
                   <BackGroundVid />
-                  <SignUpForm />
+                  
+                  <BackgroundSelector/>
+                  
                 </WinBox>
               )}
             </div>
@@ -118,7 +129,7 @@ function Navbar() {
                   x={100}
                   y={50}
                   noResize={true}
-                  background="linear-gradient(90deg, rgba(135,91,128,1) 0%, rgba(59,106,218,1) 100%)"
+                  background="linear-gradient(90deg, rgba(173,11,4,1) 20%, rgba(160,201,151,1) 90%)"
                   onclose={() => closeWinBox("login2")}
                 >
                   <BackGroundVid />
@@ -139,7 +150,7 @@ function Navbar() {
                   x={100}
                   y={50}
                   noResize={true}
-                  background="linear-gradient(90deg, rgba(135,91,128,1) 0%, rgba(59,106,218,1) 100%)"
+                  background="linear-gradient(90deg, rgba(173,11,4,1) 20%, rgba(160,201,151,1) 90%)"
                   onclose={() => closeWinBox("login3")}
                 >
                   <BackGroundVid />
@@ -159,7 +170,7 @@ function Navbar() {
                   x={100}
                   y={50}
                   noResize={true}
-                  background="linear-gradient(90deg, rgba(135,91,128,1) 0%, rgba(59,106,218,1) 100%)"
+                  background="linear-gradient(90deg, rgba(173,11,4,1) 20%, rgba(160,201,151,1) 90%)"
                   onclose={() => closeWinBox("login4")}
                 >
                   <BackGroundVid />
@@ -167,6 +178,16 @@ function Navbar() {
                 </WinBox>
               )}
             </div>
+
+            
+          </li>
+          <li>
+                <div>
+                  time: {currentTimeString }
+
+                {/* <span id="span"></span> */}
+
+                </div>
           </li>
         </ul>
       </div>

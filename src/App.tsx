@@ -11,6 +11,14 @@ import BackGroundVid from "./Componets/BackGroundVid";
 import Navbar from "./Componets/Navbar";
 import IconsApps from "./Componets/IconApps";
 import '../public/Font/FreePixel.ttf';
+// import { RightClickMenu } from "./Componets/RightClickMenu/RightClickMenu";
+// import { Test } from "./Componets/Test";
+import CustomMenu from "./Componets/CustomMenu"
+import BackgroundSelector from "./Componets/BackgroundSelector";
+import { Modal } from "./Componets/Modal";
+
+
+
 // import IconsApps from './Componets/IconApps';
 {
   /**
@@ -43,6 +51,8 @@ function MyComponent() {
 }
 
 function App() {
+  
+
   // const [
   //   isWinBoxOpen, setIsWinBoxOpen,
     
@@ -58,15 +68,15 @@ function App() {
 
   return (
     <div className="p-0 m-0 place-items-start items-start align-baseline">
+      {/* <CustomMenu items={[]}/> */}
       <BackGroundVid />
-
       <Navbar />
-
+      {/* <Modal/> */}
       <IconsApps/>
+      <CustomMenu items={["wtf"]}/> 
+       
       {/* <SignUpForm /> */}
-      
-      {/* <WinBoxWrapper/> */}
-
+        
       {/* <div className="z-10">
         <button onClick={openWinBox}>Open WinBox</button>
 
@@ -86,6 +96,7 @@ function App() {
           {/* </WinBox> */}
         {/* )} */}
       {/* </div> */}
+
     </div>
   );
 }
@@ -97,8 +108,8 @@ export default App;
 // import 'winbox/dist/css/themes/modern.min.css';
 // import WinBox from 'react-winbox';
 // import axios from 'axios';
-// import sampleGif1 from './pixel.gif';
-// import sampleGif2 from './tokyo.gif';
+// import sampleGif1 from './pixel.gif'; //background selector
+// import sampleGif2 from './tokyo.gif';  //background selector
 // import { Navbar } from 'flowbite-react';
 // import WinBoxWrapper from './Componets/WinBoxWrapper';
 // import IconsApps from './IconApps';
@@ -131,7 +142,7 @@ export default App;
 
 // function App() {
 //   const [isWinBoxOpen, setIsWinBoxOpen] = useState(false);
-//   const [selectedBackground, setSelectedBackground] = useState(sampleGif1);
+//   const [selectedBackground, setSelectedBackground] = useState(sampleGif1);  //background selector
 
 //   const openWinBox = () => {
 //     setIsWinBoxOpen(true);
@@ -140,7 +151,7 @@ export default App;
 //   const closeWinBox = () => {
 //     setIsWinBoxOpen(false);
 //   };
-
+//  //background selector
 //   const changeBackground = (value) => {
 //     setSelectedBackground(value);
 //   };
@@ -193,6 +204,7 @@ export default App;
 
 //             <div className="backdrop-blur bg-white/0 m-5 rounded-3xl drop-shadow-lg shadow-2xl text-gray-100">
 //               {/* Your form code here */}
+//               what goes here?
 //             </div>
 //           </WinBox>
 //         )}
