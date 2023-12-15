@@ -15,7 +15,6 @@ import '../public/Font/FreePixel.ttf';
 // import { Test } from "./Componets/Test";
 import CustomMenu from "./Componets/CustomMenu"
 import BackgroundSelector from "./Componets/BackgroundSelector";
-import { Modal } from "./Componets/Modal";
 
 
 
@@ -71,9 +70,9 @@ function App() {
       {/* <CustomMenu items={[]}/> */}
       <BackGroundVid />
       <Navbar />
-      {/* <Modal/> */}
       <IconsApps/>
-      <CustomMenu items={["wtf"]}/> 
+      <CustomMenu items={["Abort C:/"]}/> 
+      
        
       {/* <SignUpForm /> */}
         
